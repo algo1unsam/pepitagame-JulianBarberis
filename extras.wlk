@@ -8,7 +8,7 @@ object nido {
 	method image() = "nido.png"
 
 	method teEncontro(ave) {
-		game.say(ave, "GANASTE! WIII")
+		game.say(ave, "¡GANEEEEE!")
 		game.schedule(2000, { game.stop() })
 	}
 }
@@ -17,6 +17,11 @@ object nido {
 object silvestre {
 
 	method image() = "silvestre.png"
+
+	method teEncontro(ave) {
+		game.say(ave, "¡PERDI!")
+		game.schedule(2000, { game.stop() })
+	}
 
 	method position() = game.at(self.restriccion(),0) //Copio posicion en x de pepita y en Y = 0
 

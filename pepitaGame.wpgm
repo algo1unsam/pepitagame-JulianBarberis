@@ -11,7 +11,8 @@ program PepitaGame {
 	game.boardGround("fondo2.jpg")
 
 	//tutorial1.iniciar()
-	tutorial2.iniciar()
+	//tutorial2.iniciar()
+	tutorial3.iniciar()
 
 	game.showAttributes(pepita) //Debug
 
