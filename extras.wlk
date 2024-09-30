@@ -18,6 +18,7 @@ object silvestre {
 
 	method image() = "silvestre.png"
 
-	method position() = game.origin()
-	
+	method position() = game.at(self.restriccion(),0) //Copio posicion en x de pepita y en Y = 0
+
+	method restriccion() = pepita.position().x().max(3) //Restriccion BONUS (Silvestre no puede estar a la izquierda de x = 3)
 }
